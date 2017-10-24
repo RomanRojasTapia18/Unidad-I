@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{the_title}}</h2>
+<form action="/calculate" method="post">
+    <table>
+        <p>Use thes form to submit the data
+            to calculate the satelite</p>
+        <tr>
+            <td>G:</td>
+            <td><input type="number" name="G"></td>
+        </tr>
+        <tr>
+            <td>M:</td>
+            <td><input type="number" name="M"></td>
+        </tr>
+        <tr>
+            <td>r:</td>
+            <td><input type="number" name="r"></td>
+        </tr>
+
+    </table>
+    <table>
+        <p>use the form to sumit the data to calculate the force</p>
+        <tr>
+            <td>m:</td>
+            <td><input type="number" name="m"></td>
+        </tr>
+        <tr>
+            <td>a:</td>
+            <td><input type="number" name="a"></td>
+        </tr>
+    </table>
+    <p>When you're ready, click this button</p>
+    <p><input type="submit" name="btn_calculate"
+              value="Calculate!"></p>
+</form>
+{% endblock %}

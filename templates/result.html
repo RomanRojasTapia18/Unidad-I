@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h2>{{the_title}}</h2>
+<p>The value of v :</p>
+<table>
+
+    <tr>
+        <td colspan="2">
+           v = √(G * (M / r))
+        </td>
+
+    </tr>
+    <tr>
+        <td>v:</td>
+        <td>{{the_result}}</td>
+
+    </tr>
+     <tr>
+        <td colspan="2">
+           F = m * a
+        </td>
+
+    </tr>
+    <tr>
+        <td>F:</td>
+        <td>{{the_resultF}}</td>
+
+    </tr>
+
+</table>
+<a href="/entry">Return</a>
+{% endblock %}
